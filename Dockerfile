@@ -3,6 +3,8 @@ FROM starefossen/github-pages:onbuild
 RUN apk update \
     && apk add openssl
 
+RUN gem install jekyll-local-theme
+
 CMD openssl req \
         -x509 \
         -subj "/C=NL/ST=Amsterdam/L=Amsterdam/O=localhost" \
