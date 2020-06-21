@@ -21,4 +21,4 @@ CMD openssl req \
         --force_polling \
         --ssl-cert key_public.pem \
         --ssl-key key_private.key \
-        --config _config.yml,_config-dev.yml
+        --config _config.yml,_config-dev.yml$([ -d '_themes/theme/_includes' ] && echo ',_config-localtheme.yml')
