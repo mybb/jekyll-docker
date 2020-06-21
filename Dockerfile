@@ -1,4 +1,4 @@
-FROM starefossen/github-pages:onbuild
+FROM starefossen/github-pages:latest
 
 RUN apk update \
     && apk add openssl
